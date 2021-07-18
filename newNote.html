@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>New Note</title>
+    <link rel='stylesheet' type='text/css' href='files/CSS/newNote.css'>
+    <link href="files/Bootstrap-Jquery/bootstrap.css" rel="stylesheet">
+    <link href="files/Bootstrap-Jquery/bootstrap.min.css" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="files/Bootstrap-Jquery/jquery-3.6.0.min.js"></script>
+    <script src="files/Bootstrap-Jquery/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <div class='main'>
+        <nav class="navbar navbar-expand-lg navbar-light" id='MainNavBar'>
+            <div class="container-fluid">
+                <img id='navImg' class="navbar-brand" src="files/logo.png"  />
+
+                <div dir="rtl">
+                    <ul class="navbar-nav" id="navbarNav">
+                        <li class="nav-item">
+                            <button id='viewNote' type="button" class="btn btn-primary">View Notes</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id='clearData' type="button" class="btn btn-danger">Refresh</button>
+                        </li>
+                    </ul> 
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Menu
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="newNote.html">Refresh</a>
+                          <a class="dropdown-item" href="Notes.html">View Notes</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+              <div class="w-50" id="Just_Space"></div>
+              <div class="col">Note Name</div>
+              <div class="col"><input id='noteName' type="text" class="form-control" placeholder="Enter Note Name"></div>
+              <div class="w-100"></div>
+              <div class="col">Task Description</div>
+              <div class="col"><textarea id='noteDesc' type="textarea" class="form-control" placeholder="Enter Note Description" rows="4"></textarea></div>
+              <div class="w-100"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" id="row_buttons">
+                <div class="col centred-div"><button id='addNote' type="button" class="btn btn-success Button">Save</button></div>
+                <div class="col centred-div"><button id='cancelNote' type="button" class="btn btn-danger Button">Cancel</button></div>
+            </div>
+            <div class="w-50" id="Just_Space"></div>
+        </div>
+    </div>
+
+    <script src="files/JS/newNote.js"></script>
+</body>
+</html>

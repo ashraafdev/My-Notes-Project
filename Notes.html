@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Notes</title>
+    <link rel='stylesheet' type='text/css' href='files/CSS/Notes.css'>
+    <link href="files/Bootstrap-Jquery/bootstrap.css" rel="stylesheet">
+    <link href="files/Bootstrap-Jquery/bootstrap.min.css" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="files/Bootstrap-Jquery/jquery-3.6.0.min.js"></script>
+    <script src="files/Bootstrap-Jquery/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <div class='main'>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <img id='navImg' class="navbar-brand" src="files/logo.png"/>
+
+                <div class="collapse navbar-collapse" id="navbarNav" dir="rtl">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <button id='newNote' type="button" class="btn btn-danger">Add New Note</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Menu
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="newNote.html">New Note</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="w-50" id="Just_Space"></div>
+        <div class="container">
+            <table id="notesTable">
+                <tr>
+                  <th>Note Name</th>
+                  <th>Note Management</th>
+                </tr>
+            </table>
+        </div>
+    </div>    
+
+    <script src="files/JS/Notes.js"></script>
+</body>
+</html>

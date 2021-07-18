@@ -1,0 +1,162 @@
+@font-face {
+    font-family: fonty;
+    src: url(../Staatliches-Regular.ttf);
+}
+
+.main {
+  font-family: fonty;
+  font-size: xx-large;
+}
+
+body {
+    background: url(../bg.jpg) center center fixed;
+    background-size: cover;
+}
+
+.w-100 {
+  margin-bottom: 40px;
+}
+
+.w-50 {
+  margin-bottom: 20px;
+}
+
+/* Laptops */
+
+@media (min-width: 1023px) {
+
+  .navbar {
+        margin-bottom: 60px;
+    }
+
+    #navImg {
+        width:20%; 
+        height: auto;
+    }
+
+    .nav-item {
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Button {
+        width: 150px;
+        height: 50px;
+    }
+
+    .centred-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    #Just_Space {
+      display: none;
+    }
+}
+
+/* Mobile */
+
+@media (min-width: 319px) and (max-width: 700px) {
+    #navbarNav {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+        width : auto;
+    }
+
+    #navImg {
+        width: 27.5%; 
+        height: auto;
+    }
+    
+    .container { 
+        display: block;
+    }
+
+    .row {
+        flex-direction: column;
+        text-align: center;
+        width: auto;
+        margin-top: 40px;
+    }
+
+    .row-buttons {
+        flex-direction: row;
+    }
+
+    .w-100 {
+        margin-bottom: 40px;
+    }
+
+    .Button {
+        width: 150px;
+        height: 50px;
+    }
+
+    #Just_Space {
+        display: block;
+    }
+}
+
+/* Tablets, Ipads */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+    #navbarNav {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+        width : auto;
+    }
+
+    #navImg {
+        width: 27.5%; 
+        height: auto;
+    }
+    
+    .container { 
+        display: block;
+    }
+
+    .row {
+        flex-direction: column;
+        text-align: center;
+        width: auto;
+    }
+
+    .row-buttons {
+        flex-direction: row;
+    }
+
+    .w-100 {
+        margin-bottom: 40px;
+    }
+
+    .Button {
+        width: 150px;
+        height: 50px;
+    }
+
+    #Just_Space {
+        display: block;
+    }
+}
